@@ -18,20 +18,18 @@
 </head>
 
 <body>
+    <audio autoplay loop>
+        <source src="audio/Breathing Echo space - Sound Effect.mp3" preload="auto" />
+        Your browser does not support the audio element.
+    </audio>
     <div class="main" id="section1">
         <video src="video/video-1.mp4" muted loop autoplay></video>
     </div>
-
     <div class="container">
         <div class="manifesto col-md-12 col-sm-12 col-xs-12">
             <div class="margin">
-
-                <audio autoplay loop>
-                    <source src="/audio/Breathing Echo space - Sound Effect.mp3" preload="auto">
-                    Your browser does not support the audio element.
-                </audio>
                 <span>O</span>xygen is a common good. <span>B</span>reathing clean air must become a right for every<img
-                    src="img/img-06.gif" alt="clouds" class="form">
+                    src="img/img-06.gif" alt="clouds" class="form3">
                 economic and social class. <span>H</span>umans, not industries, need to understand <span>A</span>ir
                 <span>P</span>ollution as a threat, not as economic expansion. Such a problem cannot be left, for the
                 tomorrow of tomorrows.
@@ -83,11 +81,14 @@
     <div class="main" id="section2">
         <a href="#section1" class="button">↥</a>
     </div>
+
+    <script src="/audiojs/audio.min.js"></script>
     <script>
         audiojs.events.ready(function () {
             var as = audiojs.createAll();
         });
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
