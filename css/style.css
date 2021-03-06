@@ -73,9 +73,12 @@ video {
     margin: 1.1rem 0.7rem 0 0.7rem;
 }
 
-audio {
+.control  {
+    position: absolute;
+    width: 5rem;
+    margin: 19rem 29rem;
+    mix-blend-mode: screen;
     z-index: 2;
-    position: relative;
 }
 
 /*------------------*
@@ -150,11 +153,20 @@ div.manifesto {
     :root {
         font-size: 2.3vw; 
     }
+
+    .control {
+        margin: 11rem 18rem;
+    }
 }
 
 @media screen and (max-width: 769px) {
      :root{
          font-size: 2vw;
+    }
+
+    .control {
+        width: 5.5rem;
+         margin: 13rem 21rem;
     }
 }
 
@@ -171,4 +183,10 @@ div.manifesto {
         margin: auto; 
         text-align: center;
     }
+
+    .control {
+        width: 9.5rem;
+        margin: 7rem 12rem;
+        mix-blend-mode: darken;
+   }
 }
