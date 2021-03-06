@@ -20,14 +20,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'noto';
-    src: url('fonts/NotoSansSymbols2-Regular.woff2') format('woff2'),
-         url('fonts/NotoSansSymbols2-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
     font-size: 1.5vw;
     line-height: 1.4em;
@@ -57,20 +49,19 @@ span {
     font-family: 'forest';
 }
 
-#section1 {
-    font-family: 'inter regular';
-}
-
 #section2 {
-    font-family: 'inter regular';
     position: absolute;
-    padding: 2rem 0 3rem 0;
+    padding: 2rem 0;
     font-size: 2.3rem;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
     width: 100px;
+}
+
+.button {
+    padding: 0.5rem;
 }
 
 video {
@@ -80,6 +71,11 @@ video {
     width: 97%;
     height: 97%;
     margin: 1.1rem 0.7rem 0 0.7rem;
+}
+
+audio {
+    z-index: 2;
+    position: relative;
 }
 
 /*------------------*
@@ -126,6 +122,12 @@ div.manifesto {
     left: 0;
 }
 
+.container .manifesto .form5 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
 /*------------------*
        gradient 
 *------------------*/
@@ -165,6 +167,7 @@ div.manifesto {
     }
     
     #section2 {
-        margin: 0.5rem 1.2rem;
+        margin: auto; 
+        text-align: center;
     }
 }
