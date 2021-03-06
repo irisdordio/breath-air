@@ -26,8 +26,8 @@
         <div class="manifesto col-md-12 col-sm-12 col-xs-12">
             <div class="margin">
 
-                <audio controls autoplay loop>
-                    <source src="./audio/Breathing Echo space - Sound Effect.mp3" type="audio/mpeg">
+                <audio autoplay loop>
+                    <source src="audio/Breathing Echo space - Sound Effect.mp3" preload="auto">
                     Your browser does not support the audio element.
                 </audio>
                 <span>O</span>xygen is a common good. <span>B</span>reathing clean air must become a right for every<img
@@ -83,7 +83,11 @@
     <div class="main" id="section2">
         <a href="#section1" class="button">↥</a>
     </div>
-
+    <script>
+        audiojs.events.ready(function () {
+            var as = audiojs.createAll();
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
