@@ -73,14 +73,6 @@ video {
     margin: 1.1rem 0.7rem 0 0.7rem;
 }
 
-.control  {
-    position: absolute;
-    width: 5rem;
-    margin: 19rem 29rem;
-    mix-blend-mode: screen;
-    z-index: 2;
-}
-
 /*------------------*
         text  
 *------------------*/
