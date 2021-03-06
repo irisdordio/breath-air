@@ -73,11 +73,6 @@ video {
     margin: 1.1rem 0.7rem 0 0.7rem;
 }
 
-audio {
-    z-index: 2;
-    position: relative;
-}
-
 /*------------------*
         text  
 *------------------*/
